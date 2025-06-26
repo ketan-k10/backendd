@@ -8,7 +8,20 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Progress } from "@/components/ui/progress"
 import { Separator } from "@/components/ui/separator"
 import { Input } from "@/components/ui/input"
-import { Download, Edit, MapPin, Calendar, Trophy, Star, Award, Waves, Target, Users, Bot, MessageCircle } from 'lucide-react'
+import {
+  Download,
+  Edit,
+  MapPin,
+  Calendar,
+  Trophy,
+  Star,
+  Award,
+  Waves,
+  Target,
+  Users,
+  Bot,
+  MessageCircle,
+} from "lucide-react"
 import Link from "next/link"
 
 export default function ProfilePage() {
@@ -153,7 +166,7 @@ export default function ProfilePage() {
               <CardContent className="p-6 text-center">
                 <div className="relative mb-6">
                   <Avatar className="w-24 h-24 mx-auto border-4 border-green-200">
-                    <AvatarImage src="/images/avatar-placeholder.svg" alt={userProfile.name} />
+                    <AvatarImage src="/placeholder.svg?height=96&width=96" alt={userProfile.name} />
                     <AvatarFallback className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-500 text-white">
                       {userProfile.name
                         .split(" ")
@@ -285,7 +298,7 @@ export default function ProfilePage() {
                   </Button>
                 </div>
               </CardHeader>
-              {/* <CardContent>
+              <CardContent>
                 <div className="space-y-4">
                   {participationHistory.map((event, index) => (
                     <div key={event.id}>
@@ -320,7 +333,7 @@ export default function ProfilePage() {
                     </div>
                   ))}
                 </div>
-              </CardContent> */}
+              </CardContent>
             </Card>
 
             {/* Certificates */}
